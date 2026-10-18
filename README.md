@@ -97,3 +97,12 @@ Não há integração bancária, Open Finance, Pix, corretora, importação de e
 ## Publicação
 
 `.openai/hosting.json` identifica o único Site privado deste projeto e o binding D1. O fluxo Sites aplica as migrações publicadas e configura a autenticação. A publicação inicial fica privada para o proprietário; compartilhar com colegas exige alterar explicitamente a audiência. O endereço esperado antes da publicação não é prova de uma versão ativa.
+
+
+## Apresentação na Azure
+
+Esta cópia inclui um build estático para Azure Static Web Apps. Gere-o com `npm run build:azure`; os arquivos prontos ficam em `dist-azure/`. A página abre direto no painel com dados de exemplo e salva alterações somente no armazenamento local do navegador.
+
+Essa versão serve para apresentar a interface e os cálculos do modo local. Ela não inclui login ChatGPT, banco D1, sincronização entre dispositivos ou APIs do aplicativo. Não use dados financeiros pessoais no site de apresentação.
+
+No Azure Static Web Apps, conecte o repositório e a branch `main`. O fluxo de publicação precisa compilar com `npm run build:azure` e publicar `dist-azure/` sem uma API. O projeto principal continua configurado para Cloudflare Workers e D1.
