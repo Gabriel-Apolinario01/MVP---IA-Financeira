@@ -3,19 +3,22 @@ IA FINANCEIRA — COMO ABRIR
 1. Dê dois cliques em "Abrir IA Financeira.cmd".
 2. Aguarde aparecer "Local: http://127.0.0.1:5173/".
 3. Abra http://127.0.0.1:5173/ no navegador.
-4. Escolha "Explorar demonstração" para conhecer o aplicativo.
+4. Para abrir o painel com dados de exemplo, acesse http://127.0.0.1:5173/?mode=demo&view=overview.
 
 Mantenha a janela do iniciador aberta durante o uso. Para encerrar,
 pressione Ctrl+C nessa janela. Feche uma execução anterior antes de
 iniciar outra: a porta 5173 é fixa.
 
-O QUE ESTÁ PRONTO
+O QUE ESTÁ PRONTO NESTA CÓPIA
 Receitas e despesas, orçamento por categoria, dívidas com parcela
-vinculada, cenários de economia, metas e reserva com histórico,
-conteúdo educativo e simulador de acumulação.
+vinculada, resumo mensal e memória de cálculo.
 
-Demonstração: exemplos fictícios salvos no navegador. É possível
-restaurar os exemplos ou iniciar uma demonstração vazia em Configurações.
+As abas Economizar e Metas exibem apenas “Em desenvolvimento”.
+A aba Aprender tem um campo de pergunta e retorna “Em desenvolvimento”;
+não faz chamada a uma IA. O simulador não está exposto nesta cópia.
+
+Dados de exemplo: valores fictícios salvos somente neste navegador.
+Configurações permite restaurar os exemplos ou limpar os dados locais.
 
 Começar: neste ambiente local, abre uma identidade de TESTE identificada
 na interface. Os registros dessa identidade ficam no banco .wrangler/state,
@@ -26,9 +29,9 @@ O projeto de hospedagem foi criado em uma conta anterior. A conta atual
 não tem acesso a ele, portanto não há link online publicado nesta entrega.
 A autenticação real ChatGPT/Sites precisa da publicação acessível.
 
-A chave do provedor de IA não está configurada. O diagnóstico disponível
-é "Análise automática por regras", com números calculados e fontes
-educativas revisadas. O orçamento e o simulador funcionam sem essa chave.
+A chave do provedor de IA não está configurada. Na aba Aprender, o
+campo de pergunta é somente visual e informa que a função está em
+desenvolvimento. Os cálculos do resumo mensal continuam funcionando.
 
 ARQUIVOS
 README.md: instalação, arquitetura, regras e limitações.

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # IA Financeira
 
 Aplicação para registrar receitas e despesas, acompanhar o orçamento, organizar dívidas, planejar metas e explorar cenários de acumulação. Interface em português, valores em reais e modo demonstrativo separado das contas pessoais.
@@ -18,7 +17,7 @@ node scripts/prepare-local-db.mjs
 npm run dev
 ```
 
-Acesse o endereço Local mostrado pelo servidor (normalmente `http://localhost:5173`). Escolha **Explorar demonstração** para testar imediatamente, sem chave e sem login externo. O seletor de mês começa no mês atual de São Paulo. Configurações permite restaurar os exemplos ou começar uma demonstração vazia.
+A página inicial abre em `http://localhost:5173`. Para apresentar o painel com os dados de exemplo, acesse `http://localhost:5173/?mode=demo&view=overview`. Os exemplos ficam no armazenamento local deste navegador; Configurações permite restaurá-los ou limpar os dados locais.
 
 O preparo consulta o banco e só aplica a migração inicial em um banco sem a tabela financeira. Migrações subsequentes devem ser geradas com `npm run db:generate` e aplicadas em ordem. O banco local fica em `.wrangler/state`. Mantenha essa pasta para preservar contas locais; não a publique.
 
@@ -98,6 +97,3 @@ Não há integração bancária, Open Finance, Pix, corretora, importação de e
 ## Publicação
 
 `.openai/hosting.json` identifica o único Site privado deste projeto e o binding D1. O fluxo Sites aplica as migrações publicadas e configura a autenticação. A publicação inicial fica privada para o proprietário; compartilhar com colegas exige alterar explicitamente a audiência. O endereço esperado antes da publicação não é prova de uma versão ativa.
-=======
-# MVP-IA-Financeira
->>>>>>> c2ad17b884dde254e23f8adf86dfed981f9da0a0

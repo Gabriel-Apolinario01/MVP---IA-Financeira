@@ -16,3 +16,5 @@ body{font-size:16px}.brand small{display:none}.button,.text-link,.nav-item,.fiel
 /* Readable secondary text on the pale surfaces. */
 .sidebar-note p,.donut small,.donut span,.date-tile small,.insight-card .eyebrow{color:#53634f}.insight-card p,.education-card p,.diagnosis p,.saving-card>p{font-size:1rem}
 
+
+.development-card{min-height:210px;display:flex;align-items:center;justify-content:center;text-align:center}.development-card h2{color:var(--muted);font-size:20px;font-weight:500}.development-chat-card{min-height:200px;display:flex;flex-direction:column;gap:20px}.development-chat-heading{display:flex;align-items:center;justify-content:space-between;gap:12px}.development-chat-heading h2{font-size:21px;font-weight:500}.development-chat-response{margin:0}
